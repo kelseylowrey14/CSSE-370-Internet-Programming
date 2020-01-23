@@ -9,7 +9,8 @@ Phase #1
   
   Notes: Things you learned, issues, what you looked up even easy stuff.
     I thought that the h1, h2, h3 was just the different heading numberings but they made the header size vary. 
-
+    
+To make your pages open up to another window instead of redirecting it target = "_blank 
 
 
 Phase #2
