@@ -1,1 +1,119 @@
+/*css for the first page*/
+body{ background-color: #FFFFFF;
+}
+#header{background-color: #F4B3B7}
 
+.pageheader{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    height: auto;
+}
+.pageheader#pg2pic{
+    max-height: 30%;
+    max-width: 30%;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lavenderblush;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rosybrown;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+span{
+  font-size:30px;cursor:pointer 
+
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.title{ 
+	text-align:center;
+	color: MediumSeaGreen;
+	font-family: "Apple Chancery", cursive;
+	border-style:groove;
+	border-color:hsla(0, 90%, 70%, 0.3);
+	border-radius: 25px;
+}
+
+#tasks{
+	font-style: oblique
+}	
+
+/* mouse over link */
+a:hover {
+  color: tomato;
+}
+
+	
+h3::first-letter{
+font-family: "Snell Roundhand", cursive;
+font-size: xx-large;
+letter-spacing: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+   padding: 10px; 
+ 
+}
+
+form.example button:hover {
+  background: #0b7dda;
+    
+}
+form.example{
+     max-width:300px;
+    float:right;
+}
+ form.example input[type=text]:focus{
+  background-color: aliceblue;
+}
+div > p {
+  font-family: "Comic Sans MS", "Comic Sans", cursive
+}
+/*yes*/
