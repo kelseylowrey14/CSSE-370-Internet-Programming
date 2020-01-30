@@ -1,25 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
   <head>
+    <meta charset="UTF-8">
     <title>Preparing the Bride's Wedding Day
     </title>
+ <link href="./mystyleindex.css" type="text/css" rel="stylesheet">
   </head>
-  <body>
-    <div id="header">
-<img src="bridering.png" alt = "page header"/>       <h3>For the Bride</h3>
-      <div id="tasks">
-        <h4>Dresses
-        </h4>
-        <ul>
+<div id="header">
+	<img width ="640" src="bridering.png" id = "pg2pic" class = "pageheader"/>   
+    </div>
+   <h2 class ="title"> Bride</h2> 
+<body>
+    
+    <form class="example" action="/action_page.php" >
+        <input type="text" placeholder="Search.." name="search2">
+         
+</form> 
+<div id="main">
+  <contentmargins>
+      
+  <span onclick="openNav()">&#9776; </span>
+     
+   <div id="tasks">
+        <h3>Dresses
+        </h3>
+      <ul>
           <li><a href="https://www.davidsbridal.com/?gclsrc=aw.ds&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlPpHQDvmRAjV0lI5lwjZoAuoh6wnUmMXSmD6T3nTQWIy3boXuaoTx4aAl4wEALw_wcB&gclsrc=aw.ds" target = "_blank">David's Bridal Gowns</a></li>
-        </ul>
-	<h4>Flower Bouquets
-        </h4>
+</ul>
+<h3>Flower Bouquets
+        </h3>
         <ul>
           <li><a href="https://bouqs.com/services/weddings" target = "_blank">The Bouqs Co.</a></li>
-        </ul>      
+        </ul> 
+       </div>
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="#">Wedding Arrangements</a>
+  <a href="page2.html" target = "_blank">Bride</a>
+  <a href="#">Groom</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    </contentmargins>
     </div>
-    </div>
-    <a href = "index.html"> Home Page </a>
   </body>
 </html>
