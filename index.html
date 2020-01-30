@@ -1,27 +1,61 @@
 
 <!DOCTYPE html>
-<html>
+<html lang = "en">
   <head>
+    <meta charset="UTF-8"
+        name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Kelsey's Wedding Planning
     </title>
+   <link href="./mystyleindex.css" type="text/css" rel="stylesheet">
   </head>
-  <body>
     <div id="header">
-	<img width ="640" src="wedding header.png" alt = "page header"/>   
-	 <h3>Planning Your Wedding Day</h3>
-      <div id="tasks">
-        <h4>Venues
-        </h4>
-        <ul>
-          <li><a href="https://www.destinationweddings.com/?cam=SSEM-Google-EN-US-Search-Wedding-Generic-EXA-Kenshoo&adg=Wedding_Locations&adc=nongeomodrsa&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlNKcQaqYC3oY4F1YjB8MyB6Ax3oyYJIjGJtfQnVeL7SQdCpbmwr_e8aApwhEALw_wcB" target = "_blank">Destination Wedding</a></li>
+	<img width ="640" src="weddingheader.png" id = "pg1pic" class = "pageheader"/>   
+    </div>
+   <h2 class ="title"> Planning Your Wedding Day</h2>  
+  <body>
+    <div id="main">
+  <contentmargins>
+
+      <form class="example" action="/action_page.php" >
+        <input type="text" placeholder="Search.." name="search2">    
+</form> 
+ 
+  <span onclick="openNav()">&#9776; </span>
+      
+   <div id="tasks">
+        <h3>Venues
+        </h3>
+       <p>Choose from several venue options: Backyard, Destination, Garden, Mansion, etc. Wedding
+       
+       </p>
+      <ul>
+          <li class = "destination"><a href="https://www.destinationweddings.com/?cam=SSEM-Google-EN-US-Search-Wedding-Generic-EXA-Kenshoo&adg=Wedding_Locations&adc=nongeomodrsa&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlNKcQaqYC3oY4F1YjB8MyB6Ax3oyYJIjGJtfQnVeL7SQdCpbmwr_e8aApwhEALw_wcB" target = "_blank">Destination Wedding</a>
+             </li>
         </ul>
-        <hr/>
-        <div>
-      <h3>Bride</h3>
-      <a href="page2.html" target = "_blank">Preparing the Bride's Wedding Day</a>
+        </div>
+      
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Wedding Arrangements</a>
+  <a href="page2.html" target = "_blank">Bride</a>
+  <a href="#">Groom</a>
+  <a href="#">Contact Us</a>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+    </contentmargins>
     </div>
-      </div>
-    </div>
-    
   </body>
+  
 </html>
