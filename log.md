@@ -25,4 +25,8 @@ Test Cases:
     Notes: Comments in CSS are /*   */
     Forms are like search bars <form class="example" action="/action_page.php" >
         <input type="text" placeholder="Search.." name="search2"></form>
+<<<<<<< HEAD
          
+=======
+         
+>>>>>>> 59ff153e2514cee2de11c131fff67448b4d50ea4
