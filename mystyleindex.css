@@ -1,5 +1,16 @@
 /*css for the first page*/
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+@media screen and (min-width:240px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+}
 body{ background-color: #FFFFFF;
+    width: 100% ;
 }
 #header{background-color: #F4B3B7}
 
@@ -7,12 +18,15 @@ body{ background-color: #FFFFFF;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  max-width: 50%;
     height: auto;
+    width: auto;
 }
 .pageheader#pg2pic{
     max-height: 30%;
     max-width: 30%;
+    width:auto;
+    height:auto;
 }
 
 .sidenav {
@@ -31,7 +45,7 @@ body{ background-color: #FFFFFF;
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2.5vw;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -45,7 +59,7 @@ body{ background-color: #FFFFFF;
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 3vw;
   margin-left: 50px;
 }
 
@@ -54,12 +68,12 @@ body{ background-color: #FFFFFF;
   padding: 16px;
 }
 span{
-  font-size:30px;cursor:pointer 
+  font-size:3vw;cursor:pointer 
 
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 2.1vw;}
 }
 
 .title{ 
@@ -84,7 +98,7 @@ a:hover {
 h3::first-letter{
 font-family: "Snell Roundhand", cursive;
 font-size: xx-large;
-letter-spacing: 3px;
+letter-spacing: .2vw;
 }
 
 * {
@@ -93,7 +107,7 @@ letter-spacing: 3px;
 
 form.example input[type=text] {
   padding: 10px;
-  font-size: 17px;
+  font-size: 2vw;
   border: 1px solid grey;
   float: left;
   width: 80%;
