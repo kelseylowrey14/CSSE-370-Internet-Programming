@@ -99,14 +99,13 @@ font-size: 2vw;
     body{ 
      overflow-x: hidden;
     }
-}
-   
-body{ background-color: #FFFFFF;
-    width: 100% ;
-     overflow-x: hidden;
-     
-}
+}  
 
+html, body {
+   background-color: #FFFFFF;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 #header{background-color: #F4B3B7}
 
 .pageheader{
