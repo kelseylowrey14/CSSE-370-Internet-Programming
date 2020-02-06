@@ -1,80 +1,129 @@
 /*css for the first page*/
 @viewport {
   width: device-width ;
-  zoom: 1.0 ;
+  zoom: 1.0;
 }
 @-ms-viewport {
   width: device-width ;
 }
-@media screen and (min-width:240px) and (max-width:640px) {
+
   /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+
+.sidenav {
+  margin: 0;
+  width: 13.8888vw;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+border: .069444vw solid #555; 
+  
 }
+
+.sidenav a {
+  display: block;
+  color: black;
+  padding: 1.11111vw;
+  text-decoration: none;
+font-size: 2vw;
+}
+
+.sidenav a.active {
+  background-color: #F4B3B7;
+  color: black;
+}
+
+.sidenav a:hover:not(.active) {
+  background-color: rosybrown;
+  color: white;
+}
+
+#main {
+  margin-left: 13.88888vw;
+ padding: .069444vw 1.111111vw;
+  height: 69.4444vw;
+
+}
+.border {
+  text-align: center;
+  border-bottom: .06944vw solid #555;
+}
+.active{
+    text-align: center;
+    border-bottom: .06944vw solid #555;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {
+      float: left;
+    }
+#main {
+    margin-left: 0;
+    
+    }
+    .border{
+        border-right:.06944vw solid #555;
+        
+    }
+    .active{
+        border-right:.06944vw solid #555;
+        
+    }
+    body{ 
+     overflow-x: hidden;
+    
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav {
+      padding-top: 1.04666vw;
+    }
+  .sidenav a {
+      font-size: 2.1vw;
+    }
+    .sidenav a {
+    text-align: center;
+    float: none;
+      
+  }
+    body{ 
+     overflow-x: hidden;
+    }
+}
+   
 body{ background-color: #FFFFFF;
     width: 100% ;
+     overflow-x: hidden;
+     
 }
+
 #header{background-color: #F4B3B7}
 
 .pageheader{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
+  max-width: 70%;
     height: auto;
     width: auto;
 }
 .pageheader#pg2pic{
-    max-height: 30%;
-    max-width: 30%;
+    max-height: 50%;
+    max-width: 50%;
     width:auto;
     height:auto;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: lavenderblush;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 2.5vw;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: rosybrown;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 3vw;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-span{
-  font-size:3vw;cursor:pointer 
-
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 2.1vw;}
-}
 
 .title{ 
 	text-align:center;
@@ -82,7 +131,7 @@ span{
 	font-family: "Apple Chancery", cursive;
 	border-style:groove;
 	border-color:hsla(0, 90%, 70%, 0.3);
-	border-radius: 25px;
+	border-radius: 1.736vw;
 }
 
 #tasks{
@@ -106,13 +155,13 @@ letter-spacing: .2vw;
 }
 
 form.example input[type=text] {
-  padding: 10px;
+  padding: .069444vw;
   font-size: 2vw;
-  border: 1px solid grey;
+  border: .06944vw solid grey;
   float: left;
   width: 80%;
   background: #f1f1f1;
-   padding: 10px; 
+   padding: .069444vw; 
  
 }
 
@@ -121,7 +170,7 @@ form.example button:hover {
     
 }
 form.example{
-     max-width:300px;
+     max-width:20.83333vw;
     float:right;
 }
  form.example input[type=text]:focus{
@@ -129,5 +178,8 @@ form.example{
 }
 div > p {
   font-family: "Comic Sans MS", "Comic Sans", cursive
+}
+.destination,.bouquets,.dresses{
+    font-size: 2vw;
 }
 

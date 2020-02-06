@@ -25,8 +25,28 @@ Test Cases:
     Notes: Comments in CSS are /*   */
     Forms are like search bars <form class="example" action="/action_page.php" >
         <input type="text" placeholder="Search.." name="search2"></form>
-<<<<<<< HEAD
-         
-=======
-         
->>>>>>> 59ff153e2514cee2de11c131fff67448b4d50ea4
+
+
+Phase #3
+
+All previous tests passed, added new tests
+
+Test Cases:
+    (3.1) Relocate Sidebar when it is on a phone screen
+    (3.2) Do Mobile Friendly Test Run
+    (3.3) Media Query CSS
+    (3.4) Widths in Percent, Font Size 14+
+    
+    Notes: https://search.google.com/test/mobile-friendly (to test if site is mobile friendly)
+    https://khaledkzy.github.io/pixel-vh-vw-converter/ (pixel to vw converter)
+    <meta name="viewport" content="width=device-width, initial-scale=1"> to make a page mobile friendly
+    @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+@media screen and (min-width:240px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+}

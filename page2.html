@@ -14,45 +14,32 @@
 <body>
     
     <form class="example" action="/action_page.php" >
-        <input type="text" placeholder="Search.." name="search2">
-         
+    <input type="text" placeholder="Search.." name="search2">   
 </form> 
+    
 <div id="main">
       
-  <span onclick="openNav()">&#9776; </span>
-     
    <div id="tasks">
         <h3>Dresses
         </h3>
       <ul>
-          <li><a href="https://www.davidsbridal.com/?gclsrc=aw.ds&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlPpHQDvmRAjV0lI5lwjZoAuoh6wnUmMXSmD6T3nTQWIy3boXuaoTx4aAl4wEALw_wcB&gclsrc=aw.ds" target = "_blank">David's Bridal Gowns</a></li>
+          <li><a class = "dresses" href="https://www.davidsbridal.com/?gclsrc=aw.ds&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlPpHQDvmRAjV0lI5lwjZoAuoh6wnUmMXSmD6T3nTQWIy3boXuaoTx4aAl4wEALw_wcB&gclsrc=aw.ds" target = "_blank">David's Bridal Gowns</a></li>
 </ul>
 <h3>Flower Bouquets
         </h3>
         <ul>
-          <li><a href="https://bouqs.com/services/weddings" target = "_blank">The Bouqs Co.</a></li>
+          <li><a class = "bouquets" href="https://bouqs.com/services/weddings" target = "_blank">The Bouqs Co.</a></li>
         </ul> 
        </div>
     <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="#">Wedding Arrangements</a>
-  <a href="page2.html" target = "_blank">Bride</a>
-  <a href="#">Groom</a>
-  <a href="#">Contact Us</a>
+ 
+  <a href="index.html" class = "border" target = "_blank">Home</a>
+  <a href="#" class = "border">Wedding Arrangements</a>
+  <a class = "active" href="#bride" >Bride</a>
+  <a href="#" class = "border">Groom</a>
+  <a href="#" class = "border">Contact Us</a>
 </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
     </div>
   </body>
 </html>
