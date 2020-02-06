@@ -106,6 +106,9 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+body{
+    position:relative
+}
 #header{background-color: #F4B3B7}
 
 .pageheader{
