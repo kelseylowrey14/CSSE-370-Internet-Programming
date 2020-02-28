@@ -99,6 +99,10 @@ font-size: 2vw;
     body{ 
      overflow-x: hidden;
     }
+    
+.button{
+     font-size: 1.5vw; 
+}
 }  
 
 body {
@@ -183,3 +187,8 @@ div > p {
     font-size: 2vw;
 }
 
+.button{
+     font-size: 1.5vw; 
+    font-style: oblique
+    
+}

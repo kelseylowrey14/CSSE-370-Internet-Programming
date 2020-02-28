@@ -8,18 +8,28 @@
     </title>
    <link href="./mystyleindex.css" type="text/css" rel="stylesheet">
   </head>
-    <div id="header">
+    <div id="header" onmousemove="myMoveFunction()">
 	<img width ="640" src="weddingheader.png"  alt="Wedding header" id = "pg1pic" class = "pageheader"/>   
     </div>
    <h2 class ="title"> Planning Your Wedding Day</h2>  
   <body>
+      
     <div id="main">
 
       <form class="example" action="/action_page.php" >
         <input type="text" placeholder="Search.." name="search2">    
 </form> 
- 
-   <div id="tasks">
+        
+        <div id="tasks">
+            
+            <button class="button" onclick="Functext()">Why should I choose Kelsey's Wedding Planning?</button>
+             
+            <p id="Whyus" onclick="remove(this)"></p>
+          
+            <div onmousemove="myMoveFunction()">
+  <p>Number of reasons why you should choose our planning services! : <br> <span id="demo"></span></p>
+</div> 
+            
         <h3>Venues
         </h3>
        <p>Choose from several venue options: Backyard, Destination, Garden, Mansion, etc.
@@ -40,8 +50,9 @@
   <a href="#" class = "border">Contact Us</a>
         </div>
 
-
+<script type="text/javascript" src="myscript.js"></script>
     </div>
+      
   </body>
   
 </html>

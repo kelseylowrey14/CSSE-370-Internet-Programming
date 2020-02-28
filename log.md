@@ -50,3 +50,32 @@ Test Cases:
 @media screen and (min-width:240px) and (max-width:640px) {
   /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
 }
+
+Phase #4
+
+All previous tests passed, added new tests
+
+Test Cases:
+    (4.1) External JavaScript file, loaded by index.html
+    (4.2) Element (such as a button) that creates a new, visible element when clicked
+    (4.3) New element from above should:
+            * Have style applied from CSS file
+            * Deletes itself when clicked 
+    (4.4) Element that contains text that changes when the mouse movers over it, based on mouse's location
+    
+    Notes:
+    Insert to the top of the javascript file to prevent errors 
+    /*eslint-env browser*/
+    "use strict";
+    To remove a text element when clicked without a button:
+    function remove(el) {
+    var element = el;
+    element.remove();
+    }
+    <p id="Whyus" onclick="remove(this)"></p>
+    
+    Add to index.html before end body tag or in the head to connect to the javascript external file
+    <script type="text/javascript" src="myscript.js"></script>
+    Based on mouse location event: https://www.w3schools.com/jsref/event_onmousemove.asp
+
+
