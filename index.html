@@ -7,12 +7,13 @@
     <title>Kelsey's Wedding Planning
     </title>
    <link href="./mystyleindex.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="myscript.js"></script>
   </head>
     <div id="header" onmousemove="myMoveFunction()">
 	<img width ="640" src="weddingheader.png"  alt="Wedding header" id = "pg1pic" class = "pageheader"/>   
     </div>
    <h1 class ="title"> Planning Your Wedding Day</h1>  
-  <body>
+  <body onload = "main()">
       
     <div id="main">
 
@@ -35,6 +36,9 @@
        <p>Choose from several venue options: Backyard, Destination, Garden, Mansion, etc.
        
        </p>
+            <div id = "demo2"></div>
+            <div onclick="fetchHouses()">Fetch Sorting Houses</div>
+        <ul id="houses"></ul>
       <ul>
           <li class = "destination"><a href="https://www.destinationweddings.com/?cam=SSEM-Google-EN-US-Search-Wedding-Generic-EXA-Kenshoo&adg=Wedding_Locations&adc=nongeomodrsa&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlNKcQaqYC3oY4F1YjB8MyB6Ax3oyYJIjGJtfQnVeL7SQdCpbmwr_e8aApwhEALw_wcB" target = "_blank">Destination Wedding</a>
              </li>
@@ -50,9 +54,10 @@
   <a href="#" class = "border">Contact Us</a>
         </div>
 
-<script type="text/javascript" src="myscript.js"></script>
+
     </div>
-      
+     
+       
   </body>
   
 </html>

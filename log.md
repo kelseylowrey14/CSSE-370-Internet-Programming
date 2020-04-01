@@ -78,4 +78,23 @@ Test Cases:
     <script type="text/javascript" src="myscript.js"></script>
     Based on mouse location event: https://www.w3schools.com/jsref/event_onmousemove.asp
 
+Phase #5
 
+All Previous tests passed, added new tests
+
+Test Cases:
+    (5.1) Fix Accessibility problems identified by ANDI tool for both webpages
+    
+    Notes: Add ANDI download tool to your book mark tab then when you are on your webpage you can just click it and it will identify any features that you need to fix in order to be accessible
+    
+    
+Phase #6
+
+All previous tests passed, added new tests
+
+Test Cases:
+    (6.1) Add the following user workflow to project:
+        (6.1.1) Information is pulled through an API (this can be triggered by a user action or automatically using an onload event handler)
+        (6.1.2) Present to the user some choice based on that information.
+        (6.1.3) Based on the user choice, request additional information through an API.
+        (6.1.4) Present something based on the additional information.
