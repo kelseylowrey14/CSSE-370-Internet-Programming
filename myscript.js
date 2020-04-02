@@ -65,8 +65,9 @@ function processnumber(jsonnumber) {
     jsonnumber
         .data
         .forEach(number => {
+        console.log(numbers.number)
             var li = document.createElement('li')
-            li.appendChild(document.createTextNode(number.number))
+            li.appendChild(document.createTextNode(numbers.number))
             elnumber.appendChild(li)
         });
 }
