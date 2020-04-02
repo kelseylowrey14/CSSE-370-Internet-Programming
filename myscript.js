@@ -45,29 +45,28 @@ function processLOTR(jsonLOTR){
              });
 }
 */
+
 function main() {
-    document.getElementById("demo2").innerHTML = "Harry Potter Houses!";
+    document.getElementById("demo2").innerHTML = "Cool Number!";
 }
-function fetchHouses() {
-    fetch("https://www.potterapi.com/v1/houses", {
-        method: "GET",
+function fetchNumber() {
+    fetch("https://api.math.tools/numbers/nod", {
+        method: "GET",mode:'no-cors',
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json",
-            "key": "$2a$10$YSnApS9X4NoHHT46CaUgO.U/802qyajAZOuYPugSiQLtzQL4BtJw"
+            
         }
-    }).then(resp => resp.json()).then(processHouses)
+    }).then(resp => resp.json()).then(processnumber).catch(err=>console.log(err))
 }
 
-function processHouses(jsonHouses) {
-    var elHouses = document.getElementById("houses")
-    jsonHouses
+function processnumber(jsonnumber) {
+    var elnumber = document.getElementById("number")
+    jsonnumber
         .data
-        /*.filter(jsonBible => jsonBible.language.name === 'English')*/
-        .forEach(house => {
-            console.log(house.houses)
+        .forEach(number => {
             var li = document.createElement('li')
-            li.appendChild(document.createTextNode(house.houses))
-            elHouses.appendChild(li)
+            li.appendChild(document.createTextNode(number.number))
+            elnumber.appendChild(li)
         });
 }
