@@ -47,27 +47,27 @@ function processLOTR(jsonLOTR){
 */
 
 function main() {
-    document.getElementById("demo2").innerHTML = "Cool Number!";
+    document.getElementById("demo2").innerHTML = "Star Wars people!";
 }
-function fetchNumber() {
-    fetch("https://api.math.tools/numbers/nod", {
+function fetchPerson() {
+    fetch("https://swapi.co/api/people/", {
         method: "GET",mode:'no-cors',
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json",
             
         }
-    }).then(resp => resp.json()).then(processnumber).catch(err=>console.log(err))
+    }).then(resp => resp.json()).then(processperson).catch(err=>console.log(err))
 }
 
-function processnumber(jsonnumber) {
-    var elnumber = document.getElementById("number")
-    jsonnumber
+function processperson(jsonperson) {
+    var elperson = document.getElementById("name")
+    jsonperson
         .data
-        .forEach(number => {
-        console.log(numbers.number)
+        .forEach(person => {
+        console.log(results.name)
             var li = document.createElement('li')
-            li.appendChild(document.createTextNode(numbers.number))
-            elnumber.appendChild(li)
+            li.appendChild(document.createTextNode(results.name))
+            elperson.appendChild(li)
         });
 }
