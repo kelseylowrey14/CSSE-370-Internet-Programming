@@ -20,45 +20,75 @@ function myMoveFunction() {
 
 let button = document.querySelector('#button')
 let name = document.querySelector('#name')
+let height = document.querySelector('#height')
+let mass = document.querySelector('#mass')
+let birthyear = document.querySelector('#birthyear')
 
+ 
+var randomNumber = Math.floor((Math.random()*88)+1)
+let apiURL= 'https://swapi.co/api/people/' + randomNumber.toString()
 
 function getInfo(){
-   axios.get('https://swapi.co/api/people/1').then(function(response){
+   
+   axios.get(apiURL).then(response=>{
        updateInfo(response.data)
+       
+   }).catch(e =>{
+       console.log('There was an error.')
    })
 }
 
 function updateInfo(data){
     name.innerText = data.name
+    
+   
+};
+
+function updateInfom(data){
+    mass.innerText = 'Mass: ' +data.mass
+       
+   }
+function updateInfoh(data){
+    height.innerText = 'Height: ' + data.height
+       
+   }
+function updateInfoby(data){
+  birthyear.innerText = 'Birth Year: ' + data.birth_year
+
+};
+
+function getInfom(){
+axios.get(apiURL).then(response=>{
+       updateInfom(response.data)
+       
+   }).catch(e =>{
+       console.log('There was an error.')
+   })
 }
-button.addEventListener('click', getInfo)
 
 
 
-
-
-/*function main() {
-    document.getElementById("demo2").innerHTML = "Star Wars people!";
-}
-function fetchPerson() {
-    fetch("https://swapi.co/api/people/", {
-        method: "GET",
-        mode:'no-cors',
-        headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-        }
-    }).then(resp => resp.json()).then(processPeople)
+function getInfoh(){
+axios.get(apiURL).then(response=>{
+       updateInfoh(response.data)
+       
+   }).catch(e =>{
+       console.log('There was an error.')
+   })
 }
 
-function processPeople(jsonPeople) {
-    var elperson = document.getElementById("person")
-    jsonPeople
-        .data
-        .forEach(person => {
-            console.log(person.name)
-            var li = document.createElement('li')
-            li.appendChild(document.createTextNode(person.name))
-            elperson.appendChild(li)
-        });
-}*/
+function getInfoby(){
+axios.get(apiURL).then(response=>{
+       updateInfoby(response.data)
+       
+   }).catch(e =>{
+       console.log('There was an error.')
+   })
+}
+
+
+
+mbutton.addEventListener('click', getInfom)
+bybutton.addEventListener('click', getInfoby)
+ hbutton.addEventListener('click', getInfoh) 
+button1.addEventListener('click', getInfo)

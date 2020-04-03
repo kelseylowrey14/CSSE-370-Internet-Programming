@@ -98,3 +98,43 @@ Test Cases:
         (6.1.2) Present to the user some choice based on that information.
         (6.1.3) Based on the user choice, request additional information through an API.
         (6.1.4) Present something based on the additional information.
+        
+        Notes: API's are a pain, the api key ones are harder, easier to use ones that don't require a key.
+        keep the script tag at the END of the body! Tried putting it in the head and it didn't work.  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js" integrity="sha256-xEofWHiBewJOBXBSH5JHWuwCYpBKOQ8KSGSVLbEVYyo=" crossorigin="anonymous"></script> An add in I used to get my data and process the response, came in handy. 
+        
+        In the JS file this was my main code that was the draft for the rest of what I watnted to do 
+        let apiURL= 'https://swapi.co/api/people/' + randomNumber.toString()
+
+        function getInfo(){
+
+           axios.get(apiURL).then(response=>{
+               updateInfo(response.data)
+
+           }).catch(e =>{
+               console.log('There was an error.')
+           })
+        }
+
+        function updateInfo(data){
+            name.innerText = data.name
+
+
+        };
+        
+        button1.addEventListener('click', getInfo)
+        
+        In index.html:
+        
+        <h3 id="name"></h3>
+        <p id ="height">
+          </p>
+          <p id = "mass">
+          </p>
+          <p id = "birthyear">
+          </p>
+        
+        </div>
+        
+        <button type="button" id ="button1" name="button">Get a Random Star Wars' Character!</button> <br><br><br>
+        
+        Reflection: I defintely struggled on this one the most and spent the most time on this project than others. The thing I spent the most time on before this and effort was the nice side navigation bar 
