@@ -18,8 +18,18 @@ function myMoveFunction() {
   document.getElementById("demo").innerHTML = z+=1;
 }
 
+let button = document.getElementById("button")
 
-function main() {
+function sayHello(){
+   axios.get('https://swapi.co/api/people/1')
+}
+button.addEventListener('click', sayHello)
+
+
+
+
+
+/*function main() {
     document.getElementById("demo2").innerHTML = "Star Wars people!";
 }
 function fetchPerson() {
@@ -43,4 +53,4 @@ function processPeople(jsonPeople) {
             li.appendChild(document.createTextNode(person.name))
             elperson.appendChild(li)
         });
-}
+}*/

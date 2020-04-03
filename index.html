@@ -7,7 +7,8 @@
     <title>Kelsey's Wedding Planning
     </title>
    <link href="./mystyleindex.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="myscript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js" integrity="sha256-xEofWHiBewJOBXBSH5JHWuwCYpBKOQ8KSGSVLbEVYyo=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="myscript.js"></script>
   </head>
     <div id="header" onmousemove="myMoveFunction()">
 	<img width ="640" src="weddingheader.png"  alt="Wedding header" id = "pg1pic" class = "pageheader"/>   
@@ -36,15 +37,24 @@
        <p>Choose from several venue options: Backyard, Destination, Garden, Mansion, etc.
        
        </p>
-            <div id = "demo2"></div>
+            <!--<div id = "demo2"></div>
             <div onclick="fetchPerson()">Fetch Star Wars people</div>
-        <ul id="person"></ul>
+        <ul id="person"></ul>-->
+            
       <ul>
           <li class = "destination"><a href="https://www.destinationweddings.com/?cam=SSEM-Google-EN-US-Search-Wedding-Generic-EXA-Kenshoo&adg=Wedding_Locations&adc=nongeomodrsa&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlNKcQaqYC3oY4F1YjB8MyB6Ax3oyYJIjGJtfQnVeL7SQdCpbmwr_e8aApwhEALw_wcB" target = "_blank">Destination Wedding</a>
              </li>
         </ul>
         </div>
-      
+      <div class = "info-container"></div>
+        <button type="button" id ="button" name="button">Find Someone from Star Wars</button>
+        
+        
+        
+        
+        
+        
+        
     <div id="mySidenav" class="sidenav">
   
   <a class="active" id = "home" href="#home">Home</a>
