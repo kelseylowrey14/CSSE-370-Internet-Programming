@@ -18,12 +18,20 @@ function myMoveFunction() {
   document.getElementById("demo").innerHTML = z+=1;
 }
 
-let button = document.getElementById("button")
+let button = document.querySelector('#button')
+let name = document.querySelector('#name')
 
-function sayHello(){
-   axios.get('https://swapi.co/api/people/1')
+
+function getInfo(){
+   axios.get('https://swapi.co/api/people/1').then(function(response){
+       updateInfo(response.data)
+   })
 }
-button.addEventListener('click', sayHello)
+
+function updateInfo(data){
+    name.innerText = data.name
+}
+button.addEventListener('click', getInfo)
 
 
 
