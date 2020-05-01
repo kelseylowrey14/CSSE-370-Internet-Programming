@@ -28,6 +28,7 @@ let birthyear = document.querySelector('#birthyear')
 var randomNumber = Math.floor((Math.random()*88)+1)
 let apiURL= 'https://swapi.co/api/people/' + randomNumber.toString()
 
+
 function getInfo(){
    
    axios.get(apiURL).then(response=>{

@@ -138,3 +138,27 @@ Test Cases:
         <button type="button" id ="button1" name="button">Get a Random Star Wars' Character!</button> <br><br><br>
         
         Reflection: I defintely struggled on this one the most and spent the most time on this project than others. The thing I spent the most time on before this and effort was the nice side navigation bar 
+        
+Phase #7
+
+All previous tests passed, (except API tests since they took down the API site I had orginally used??) added new tests
+
+Test Cases: 
+        (7.1) Run  website through the OWASP Zap tool  
+        (7.2) Submit a screenshot showing that you have addressed any risks that you are able to control (not server-side vulnerabilities).
+        
+        Notes: https://www.zaproxy.org/
+        Points out securty vulnerablities when upload your webpage
+        API stopped working, took down site :(
+        
+Phase #8
+
+All previous tests passed, except API, added new tests
+
+Tests Cases:
+        (8.1)Add a React component to your webpage that "reacts" to user input by displaying changes.
+            (8.1.1)To do this, you will need to install and run webpack locally
+            (8.1.2) Build (compile into) a JavaScript file which will include a React component
+            (8.1.3) Add the file to your project, connect it logically to your project.
+
+        Notes: 
