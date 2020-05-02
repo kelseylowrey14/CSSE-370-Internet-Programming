@@ -161,4 +161,12 @@ Tests Cases:
             (8.1.2) Build (compile into) a JavaScript file which will include a React component
             (8.1.3) Add the file to your project, connect it logically to your project.
 
-        Notes: 
+        Notes: Add webpack dependencies, then add the babel, and then add the jsx material
+        https://www.typescriptlang.org/docs/handbook/react-&-webpack.html
+
+        https://reactjs.org/docs/add-react-to-a-website.html
+        https://github.com/webpack/webpack-dev-server#getting-started
+        https://babeljs.io/docs/en/babel-preset-react
+        https://github.com/babel/babel-loader
+        https://reactjs.org
+        https://onedrive.live.com/?cid=06D5DBF917297D21&id=06D5DBF917297D21!33402&parId=06D5DBF917297D21!103&o=OneUp
