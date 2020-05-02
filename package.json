@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/kelseylowrey14/CSSE-370-Internet-Programming#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
+    "babel-loader": "^8.1.0",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^7.0.2",
     "typescript": "^3.8.3",

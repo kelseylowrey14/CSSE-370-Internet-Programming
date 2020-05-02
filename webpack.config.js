@@ -6,7 +6,7 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx"]
+        extensions: [".ts", ".tsx", ".js", ".jsx"]
     },
 
     module: {
@@ -17,6 +17,18 @@ module.exports = {
                 use: [
                     {
                         loader: "ts-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.js(x?)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "babel-loader",
+                        options: {
+                            presets: ['@babel/preset-react']
+                    }
                     }
                 ]
             },
